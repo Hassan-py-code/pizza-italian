@@ -116,27 +116,26 @@ nav li:first-child:hover{
 
 /* SECTION */
 .hero-section{
-    padding: 7rem 0  2.5rem 0;
+    padding: 10rem 0  2.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 .imag-hero img{
-    width: 350px;
-    animation:  identifier 2s infinite;
+    width: 320px;
+    border:2px solid   #ff9100;
+    border-radius: 50%;
 }
 
-/* @keyframes identifier  {
-    100%{
-        rotate: 100%;
-    }
-    
-} */
+
 
 .content-hero{
     border: 3px solid var(--color5);
-    padding: 5rem;
+    max-width: 650px;  /* Maximum width of the div */  
+    padding: 40px; 
+    
 }
 
 .content-hero h1{
@@ -152,7 +151,6 @@ nav li:first-child:hover{
 .content-hero p{
     font-weight: 600;
     color: var(--bg-color);
-    inline-size: 500px;
 }
 
 .content-hero button{
@@ -196,15 +194,11 @@ nav li:first-child:hover{
 
 
    .content-hero h1{
-    margin-top: -50px;
-    font-size: 1.7rem;
+    font-size: 2rem;
    }
 
    
-.content-hero p{
-    font-weight: 600;
-    inline-size: 270px;
-}
+
      
     
 }
@@ -212,9 +206,6 @@ nav li:first-child:hover{
 @media screen and (min-width:767px) and (max-width:1025px){
     .content-hero h1{
         text-align: left;
-    }
-    .content-hero p{
-        inline-size: 350px;
     }
     .hero-section{
         padding: 7rem 0  5rem 0;
@@ -249,7 +240,6 @@ nav li:first-child:hover{
     }
     
     
-    
 }
 
  
@@ -269,8 +259,9 @@ nav li:first-child:hover{
  
 .Menu p{
     color: var(--bg-color);
-    margin-top: 15px;
-    inline-size: 250px;
+    max-width: 650px;  /* Maximum width of the div */  
+    padding: 40px; 
+    text-align: center;
 }
 
 .all{
@@ -278,20 +269,20 @@ nav li:first-child:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: #ff9100ef; */
+    background-color: #ff9100ef;
 }
 
 .all- h2{
-      color: #f1f1f1;
+      color: #061525;
       font-size: 1.3rem;
       font-weight: 600;
       padding: 5px;
 }
 
-.all-:hover{
-    background-color: var(--color-1);
-    cursor: pointer;
+.all h2:hover{
+    background-color: #f1f1f1;
 }
+
 
 @media screen and (min-width:300px) and (max-width:767px) {
     
@@ -445,8 +436,6 @@ nav li:first-child:hover{
 /* size home and etra */
 
 .size-home{
-    /* background-color: #f1f1f1; */
-    /* text-align: center; */
     padding: 0 5rem 0 5rem;
 }
 
@@ -539,14 +528,20 @@ nav li:first-child:hover{
     border: 1px solid var(--color-1);
 }
 
-.Special a{
-     background-color: #ff9100;
-     color: #061525;
-     padding: 0.4rem 40px;
-     border-radius: 5px;
-     position: relative;
-     top: 15px;
 
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carta a{
+    background-color: #ff9100;
+    color: #061525;
+    padding: 0.4rem 40px;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
 }
 
 @media screen and (min-width:300px) and (max-width:480px){
@@ -560,7 +555,7 @@ nav li:first-child:hover{
     }
     .your-size{
         margin-top: 20px;
-        padding: 20px;
+        padding: 30px;
     }
     
     .your-size input{
@@ -575,12 +570,12 @@ nav li:first-child:hover{
         flex-direction: column;
     }
     .crust{
-        padding: 25px;
+        padding: 30px;
         margin-top: 20px;
     }
 
     .Special textarea{
-        padding: 0.5rem 70px;
+        padding: 0.5rem 50px;
         resize: none;
         margin-top: 20px;
         text-indent: -30px;
@@ -620,7 +615,7 @@ nav li:first-child:hover{
     }
 
     .Special textarea{
-        padding: 0.5rem 70px;
+        padding: 0.5rem 50px;
         resize: none;
         margin-top: 20px;
         text-indent: -30px;
@@ -663,4 +658,136 @@ nav li:first-child:hover{
         text-indent: -30px;
     }
      
+}
+
+
+/* order new */
+.Order-home{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 650px;  /* Maximum width of the div */  
+     margin: 20px auto;
+     padding: 40px; 
+}
+
+.order h1{
+    text-align: center;
+    background: linear-gradient(90deg,var(--bg-color)15%,var(--color-1)85%);
+    -webkit-background-clip:Text;
+    -webkit-text-fill-color: transparent ;
+}
+
+.order p{
+    color: var(--bg-color);
+    text-align: center;
+}
+
+
+/* CART ITEM  */
+
+.itme{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.item1{
+    background-color: var(--bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    animation: border-glow 1.5s infinite alternate;
+}
+
+.item-content P{
+    background-color: #ff9100;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.item1 img{
+      width: 150px;
+}
+
+@keyframes  border-glow {
+    0%{
+        box-shadow:0 0 10px #ff9100,0 0 13px #ff9812;
+    }
+    100%{
+        box-shadow:0 0 15px #ff9100,0 0 17px #ffd903;
+    }
+}  
+
+.item1 input{
+    font-size: 1.1rem;
+    text-align: center;
+    padding:0.1rem 30px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid #ff9100;
+}
+
+.price-and{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.price-and a{
+    color: #ff9100;
+    font-size: 1.3rem;
+}
+
+.item1 .check{
+    background-color: #ff9100;
+    padding: 0.4rem 5px;
+    color: #061525;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width:300px) and (max-width:767px){
+    .itme{
+        flex-direction: column;
+    }
+
+    .item1{
+        margin-top: 30px;
+    }
+    .item1 input{
+         margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1300px){
+    .itme{
+        flex-wrap: wrap;
+    }
+
+    .item1{
+        margin-top: 30px;
+    }
+
+    .item1 input{
+         margin-left: 10px;
+    }
+    
+}
+
+@media screen and (min-width:1331px) and (max-width:1700px){
+     
+.item1 img{
+    width: 170px;
+}
+  .item1{
+    padding: 35px;
+  }
+    
 }
